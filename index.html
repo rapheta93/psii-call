@@ -9,16 +9,32 @@
   <body>
     <div id="app">
       <div id="status">Conectando…</div>
+
+      <!-- Área principal: vídeos + chat -->
       <div id="videoArea">
-        <video id="local" autoplay muted playsinline></video>
-        <video id="remote" autoplay playsinline></video>
+        <div id="videos">
+          <video id="local" autoplay muted playsinline></video>
+          <video id="remote" autoplay playsinline></video>
+        </div>
+
+        <!-- Painel de chat -->
+        <aside id="chatPane" aria-label="Chat">
+          <header id="chatHeader">Chat</header>
+          <div id="messages" aria-live="polite"></div>
+          <form id="chatForm" autocomplete="off">
+            <input id="chatInput" type="text" placeholder="Escreva uma mensagem…" />
+            <button id="sendBtn" type="submit">Enviar</button>
+          </form>
+        </aside>
       </div>
+
       <div id="controls">
         <button id="btnMute">Mute</button>
         <button id="btnCam">Cam</button>
         <button id="btnLeave" class="primary">Sair</button>
       </div>
     </div>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
