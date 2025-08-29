@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Psii | Call (Autojoin)</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="status">Conectando…</div>
+      <div id="videoArea">
+        <video id="local" autoplay muted playsinline></video>
+        <video id="remote" autoplay playsinline></video>
+      </div>
+      <div id="controls">
+        <button id="btnMute">Mute</button>
+        <button id="btnCam">Cam</button>
+        <button id="btnLeave" class="primary">Sair</button>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
